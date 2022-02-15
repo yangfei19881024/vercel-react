@@ -1,0 +1,7 @@
+[defaults]
+project=react-template
+org=foodism
+url=http://sentryio.foodism.cc/
+
+[auth]
+token=74563e9d901a41a0bc9001c6766df32cca6cf972c2fb4de5b58a1d9f23efe359

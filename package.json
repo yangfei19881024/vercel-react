@@ -1,0 +1,80 @@
+{
+	"name": "vercel-project",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@foodism/http": "^0.1.4",
+		"@sentry/react": "^6.12.0",
+		"@sentry/tracing": "^6.12.0",
+		"await-to-js": "^3.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"fastclick": "^1.0.6",
+		"history": "^5.1.0",
+		"i": "^0.3.6",
+		"mdebug": "^2.0.1",
+		"npm": "^7.22.0",
+		"react": "^17.0.2",
+		"react-app-rewired": "^2.1.8",
+		"react-dom": "^17.0.2",
+		"react-error-boundary": "^3.1.3",
+		"react-query": "^3.23.2",
+		"react-redux": "^7.2.5",
+		"react-router-dom": "^6.1.1",
+		"react-scripts": "4.0.3",
+		"styled-components": "^5.3.1",
+		"styled-px2vw": "^2.0.0",
+		"typescript": "^4.1.2",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"wdyr": "cross-env REACT_APP_ENV=wdyr react-app-rewired start",
+		"start": "cross-env REACT_APP_ENV=localdev react-scripts start",
+		"build:dev": "cross-env REACT_APP_ENV=development react-app-rewired build",
+		"build:prod": "cross-env REACT_APP_ENV=production react-app-rewired build",
+		"report": "npx cra-bundle-analyzer",
+		"test": "react-scripts test"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"prettier"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^13.1.0",
+		"@commitlint/config-conventional": "^13.1.0",
+		"@foodism/qn-webpack": "^2.2.5",
+		"@reduxjs/toolkit": "^1.6.1",
+		"@sentry/webpack-plugin": "^1.17.1",
+		"@types/fastclick": "^1.0.30",
+		"@types/node": "^12.0.0",
+		"@types/react": "^17.0.0",
+		"@types/react-dom": "^17.0.0",
+		"@types/react-redux": "^7.1.18",
+		"@types/styled-components": "^5.1.14",
+		"@welldone-software/why-did-you-render": "^6.2.3",
+		"cra-bundle-analyzer": "^0.1.1",
+		"cross-env": "^7.0.3",
+		"http-proxy-middleware": "^2.0.1",
+		"husky": "^7.0.2",
+		"lint-staged": "^11.1.2",
+		"prettier": "2.3.2"
+	},
+	"lint-staged": {
+		"*.{js,css,md,ts,tsx,json}": "prettier --write --ignore-unknown"
+	},
+	"author": "",
+	"description": ""
+}
